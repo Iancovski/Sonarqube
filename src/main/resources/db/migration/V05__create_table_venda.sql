@@ -1,0 +1,10 @@
+CREATE TABLE venda (
+
+	id BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+	id_cliente BIGINT(20) NOT NULL,
+	valor_desconto DOUBLE PRECISION,
+	valor_acrescimo DOUBLE PRECISION,
+	
+	FOREIGN KEY (id_cliente) REFERENCES cliente(id)
+	
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

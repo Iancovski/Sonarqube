@@ -1,0 +1,10 @@
+CREATE TABLE cliente (
+
+	id BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(80) NOT NULL,
+	cpf VARCHAR(11) NOT NULL,
+	rg VARCHAR(14),
+	data_nascimento DATE,
+	ativo CHAR(1)
+	
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

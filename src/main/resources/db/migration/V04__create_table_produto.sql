@@ -1,0 +1,13 @@
+CREATE TABLE produto (
+
+	id BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(50) NOT NULL,
+	id_marca BIGINT(20),
+	custo DOUBLE,
+	preco DOUBLE,
+	qtd_minima DOUBLE,
+	ncm INTEGER,
+	
+	FOREIGN KEY (id_marca) REFERENCES marca(id)
+	
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
